@@ -4,5 +4,6 @@ function updates
     rustup update
     fisher update
     fish_update_completions
+    tldr --update
     pamac upgrade --force-refresh --no-confirm
 end

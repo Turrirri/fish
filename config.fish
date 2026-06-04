@@ -16,9 +16,6 @@ source $HOME/.cargo/env.fish
 
 bind --user alt-shift-t transpose-words
 
-set -gx EDITOR /usr/bin/vim
-set -gx VISUAL /usr/bin/vim
-
 #set PATH $HOME/.local/bin $PATH
 
 set HISTCONTROL = ignoreboth
