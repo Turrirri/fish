@@ -5,8 +5,8 @@ set -qU XDG_DATA_HOME; or set -Ux XDG_DATA_HOME $HOME/.local/share
 set -qU XDG_CACHE_HOME; or set -Ux XDG_CACHE_HOME $HOME/.cache
 
 # Favor globals for most things
-set -gx EDITOR /usr/bin/nvim
-set -gx VISUAL /usr/bin/nvim
+set -gx EDITOR /usr/bin/vim
+set -gx VISUAL /usr/bin/vim
 set -gx SUDO_EDITOR /usr/bin/vim
 set sponge_allow_previously_successful false
 set -x LESS_TERMCAP_mb \e'[01;32m'
