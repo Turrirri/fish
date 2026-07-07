@@ -33,3 +33,4 @@ function y
     end
     rm -f -- "$tmp"
 end
+bind \t __fzf_complete
