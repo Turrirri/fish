@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export EDITOR:/usr/bin/vim
+SETUVAR --export EDITOR:/usr/bin/nvim
 SETUVAR --export XDG_CACHE_HOME:/home/jhonny/\x2ecache
 SETUVAR --export XDG_CONFIG_HOME:/home/jhonny/\x2econfig
 SETUVAR --export XDG_DATA_HOME:/home/jhonny/\x2elocal/share

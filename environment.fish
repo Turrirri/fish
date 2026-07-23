@@ -23,4 +23,4 @@ set -gx FISH_PAGER "less -R"
 set -gx FISH_PAGER_COLOR always
 set -gx MANPAGER 'less -R'
 set -gx AGRC /home/jhonny/.agrc
-set -gx RIPGREP_CONFIG_PATH ~/.ripgreprc
+set -gx RIPGREP_CONFIG_PATH ~/.config/.ripgreprc
