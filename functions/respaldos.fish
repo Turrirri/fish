@@ -3,7 +3,7 @@ function respaldos
 
     if test -e $DIRECTORIO
         echo "El directorio $DIRECTORIO existe"
-        rsync -aXv --update --progress \
+        rsync -aXv --update --no-owner --no-group --progress \
             --exclude='/*/.gvfs' \
             --exclude='Descargas/' \
             --exclude='temp/' \

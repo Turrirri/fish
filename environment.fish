@@ -7,7 +7,7 @@ set -qU XDG_CACHE_HOME; or set -Ux XDG_CACHE_HOME $HOME/.cache
 # Favor globals for most things
 set -gx EDITOR /usr/bin/nvim
 set -gx VISUAL /usr/bin/nvim
-set -gx SUDO_EDITOR /usr/bin/vim
+set -gx SUDO_EDITOR /usr/bin/micro
 set sponge_allow_previously_successful false
 set -x LESS_TERMCAP_mb \e'[01;32m'
 set -x LESS_TERMCAP_md \e'[01;32m'
