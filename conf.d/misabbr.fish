@@ -3,11 +3,10 @@ abbr -a -- Info cht.sh
 abbr -a -- actualiza 'pamac update --force-refresh --no-confirm'
 abbr -a -- bc 'bc -l'
 abbr -a -- busca 'pamac search'
-abbr -a -- cmd command # utilizado para saltar el alias o abbr o función
 abbr -a -- code 'code --password-store=basic'
 abbr -a -- cp 'cp -i'
 abbr -a -- cut choose
-abbr -a -- df 'dysk --color yes'
+abbr -a -- df duf
 abbr -a -- du ncdu
 abbr -a -- ed '$EDITOR'
 abbr -a -- edit '$EDITOR'
@@ -21,7 +20,6 @@ abbr -a -- locate 'plocate -i --regex'
 abbr -a -- mc 'mc -b'
 abbr -a -- mirrors 'sudo pacman-mirrors -f 8'
 abbr -a -- mkdir 'mkdir -pv'
-abbr -a -- modificados 'sudo fd -tf '\.pac(save|new)$' / -E /home/ -E /mnt/ 2>/dev/null'
 abbr -a -- more less
 abbr -a -- mv 'mv -i'
 abbr -a -- nvdiff 'env TERM=wezterm nvim -d'
