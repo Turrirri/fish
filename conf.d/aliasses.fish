@@ -4,8 +4,8 @@ alias .. 'cd ..'
 alias bat 'bat --theme "OneHalfDark"'
 alias configs 'vim  ~/.vimrc ~/.config/fish/conf.d/aliasses.fish ~/.config/fish/conf.d/misabbr.fish'
 alias dtree "tree -L 3 -a -d -I '.git'"
-alias fd 'fd -E ~/.cache -E ~/.local/share/icons -E ~/.local/share/Trash -E ~/.icons' # busca archivos
-alias fdh 'fd --hidden -E ~/.cache -E ~/.local/share/icons -E .~/.local/share/Trash -E ~/.icons' # busca archivos ocultos
+alias fd 'fd -E .git -E ~/.cache -E ~/.local/share/icons -E ~/.local/share/Trash -E ~/.icons' # busca archivos
+alias fdh 'fd --hidden -E .git -E ~/.cache -E ~/.local/share/icons -E .~/.local/share/Trash -E ~/.icons' # busca archivos ocultos
 alias fzf 'fzf --reverse --color=base16 --preview "bat {}"'
 alias l 'eza --color-scale --header --icons --git --no-time --group-directories-first'
 alias l1 'eza --color-scale --header --icons --git --no-time --group-directories-first -1'
@@ -34,10 +34,12 @@ alias NTFS 'cd /mnt/BACKUP/HOME'
 alias PYTHON 'cd ~/Proyectos/python/ && clear'
 alias rgh 'rg --hidden --line-number --color always'
 alias topcpu 'ps -eo pid,cmd,%mem,%cpu --sort -%cpu | head'
+alias sudo doas
 alias topmem 'ps -eo pid,cmd,%mem,%cpu --sort -%mem | head'
 alias tree 'tree -L 3 -a -I ".git"'
 #alias viml 'vim -c \"normal '0\"'
 alias vimconfig 'ed -O ~/.vimrc ~/.gvimrc'
+alias wc fastwc
 alias yayp "yay -Qq | fzf --preview 'yay -Qil {}' --layout reverse --bind 'enter:execute(yay -Qil {} | bat)'"
 alias yays "yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro yay -S"
 alias zombie "ps aux | rg -s 'Z'"

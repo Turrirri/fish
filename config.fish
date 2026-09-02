@@ -20,8 +20,8 @@ bind --user alt-shift-t transpose-words
 
 set HISTCONTROL = ignoreboth
 
-eval "$(zoxide init fish)"
-#starship init fish | source
+#eval "$(zoxide init fish)"
+starship init fish | source
 fzf --fish | source
 
 #  para yazi
