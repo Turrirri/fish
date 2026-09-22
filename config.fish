@@ -8,9 +8,6 @@ if status is-interactive
     set -g fish_greeting
 end
 
-#set -gx FZF_DEFAULT_OPTS "--reverse"
-#source ~/.config/fish/aliasses.fish
-#source ~/.config/fish/abbrevs.fish
 source $HOME/.cargo/env.fish
 #set -gx ZED_ALLOW_EMULATED_GPU 1
 
@@ -20,10 +17,10 @@ bind --user alt-shift-t transpose-words
 
 set HISTCONTROL = ignoreboth
 
-#eval "$(zoxide init fish)"
+eval "$(zoxide init fish)"
 starship init fish | source
 fzf --fish | source
-
+set -gx fish_glob_case_sensitive 1
 #  para yazi
 function y
     set tmp (mktemp -t "yazi-cwd.XXXXXX")

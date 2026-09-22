@@ -18,7 +18,7 @@ abbr -a -- info tldr
 abbr -a -- instala 'pamac install'
 abbr -a -- locate 'plocate -i --regex'
 abbr -a -- mc 'mc -b'
-abbr -a -- mirrors 'sudo pacman-mirrors -f 8'
+abbr -a -- mirrors 'sudo pacman-mirrors -c United_States'
 abbr -a -- mkdir 'mkdir -pv'
 abbr -a -- more less
 abbr -a -- mv 'mv -i'
