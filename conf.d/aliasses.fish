@@ -7,22 +7,22 @@ alias dtree "tree -L 3 -a -d -I '.git'"
 alias fd 'fd -E .git -E ~/.cache -E ~/.local/share/icons -E ~/.local/share/Trash -E ~/.icons' # busca archivos
 alias fdh 'fd --hidden -E .git -E ~/.cache -E ~/.local/share/icons -E .~/.local/share/Trash -E ~/.icons' # busca archivos ocultos
 alias fzf 'fzf --reverse --color=base16 --preview "bat {}"'
-alias l 'eza'
-alias l1 'eza -1'
-alias la 'eza --all'
-alias ll 'eza -l'
-alias lla 'eza -la'
-alias ls 'eza '
-alias lt 'eza -L1 -T'
-alias ld "eza -D"
-alias lld "eza -lD"
-alias lf "eza -f"
-alias llf "eza -lf"
-alias lsz "eza -l --sort=size"
-alias lsx "eza -l --sort=extension"
-alias ltm "eza -l --sort=modified"
-alias lcr "eza -l --sort=created"
-alias lgit "eza -l --git"
+alias l 'eza --color-scale --header --icons --git --no-time --group-directories-first'
+alias l1 'eza --color-scale --header --icons --git --no-time --group-directories-first -1'
+alias la 'eza --color-scale --header --icons --git --no-time --group-directories-first --all'
+alias ll 'eza --color-scale --header --icons --git --no-time --group-directories-first -l'
+alias lla 'eza --color-scale --header --icons --git --no-time --group-directories-first -la'
+alias ls 'eza -color-scale --header --icons --git --no-time --group-directories-first'
+alias lt 'eza --color-scale --header --icons --git --no-time --group-directories-first -L1 -T'
+alias ld "eza --color-scale --header --icons --git --no-time --group-directories-first -D"
+alias lld "eza --color-scale --header --icons --git --no-time --group-directories-first -lD"
+alias lf "eza --color-scale --header --icons --git --no-time --group-directories-first -f"
+alias llf "eza --color-scale --header --icons --git --no-time --group-directories-first -lf"
+alias lsz "eza --color-scale --header --icons --git --no-time --group-directories-first -l --sort=size"
+alias lsx "eza --color-scale --header --icons --git --no-time --group-directories-first -l --sort=extension"
+alias ltm "eza --color-scale --header --icons --git --no-time --group-directories-first -l --sort=modified"
+alias lcr "eza --color-scale --header --icons --git --no-time --group-directories-first -l --sort=created"
+alias lgit "eza --color-scale --header --icons --git --no-time --group-directories-first -l --git"
 alias lx "eza -lbhHigUmuS --git"
 alias lt "eza --tree --level=3"
 alias lta "eza -a --tree --level=3"
@@ -34,7 +34,7 @@ alias NTFS 'cd /mnt/BACKUP/HOME'
 alias PYTHON 'cd ~/Proyectos/python/ && clear'
 alias rgh 'rg --hidden --line-number --color always'
 alias topcpu 'ps -eo pid,cmd,%mem,%cpu --sort -%cpu | head'
-alias sudo doas
+#alias sudo doas
 alias topmem 'ps -eo pid,cmd,%mem,%cpu --sort -%mem | head'
 alias tree 'tree -L 3 -a -I ".git"'
 #alias viml 'vim -c \"normal '0\"'
