@@ -1,5 +1,5 @@
 function respaldos
-    set DIRECTORIO /mnt/BACKUP/HOME/
+    set DIRECTORIO /run/media/jhonny/BACKUPS/HOME/
 
     if test -e $DIRECTORIO
         echo "El directorio $DIRECTORIO existe"
@@ -17,7 +17,7 @@ function respaldos
             --exclude='.mozilla/' \
             --exclude='.vim/plugged/' \
             --exclude='.local/' \
-            $HOME/ /mnt/BACKUP/HOME/ 2>~/errores.log
+            $HOME/ $DIRECTORIO/ 2>~/errores.log
         cd ~
     else
         echo "El directorio $DIRECTORIO no existe"

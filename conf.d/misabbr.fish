@@ -32,7 +32,7 @@ abbr -a -- psgrep 'ps -eo comm,pid,ppid | rg'
 abbr -a -- pygrep 'fd --regex -H -i -tf ".*\.py"'
 abbr -a -- q exit
 abbr -a -- quita 'pamac remove --orphans'
-abbr -a -- rm 'rm -i'
+abbr -a -- rm "trash-put"
 abbr -a -- rmdir 'rm -fR'
 abbr -a -- sedit sudoedit
 abbr -a -- traduce trans

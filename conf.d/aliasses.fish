@@ -4,15 +4,15 @@ alias .. 'cd ..'
 alias bat 'bat --theme "OneHalfDark"'
 alias configs 'vim  ~/.vimrc ~/.config/fish/conf.d/aliasses.fish ~/.config/fish/conf.d/misabbr.fish'
 alias dtree "tree -L 3 -a -d -I '.git'"
-alias fd 'fd -E .git -E ~/.cache -E ~/.local/share/icons -E ~/.local/share/Trash -E ~/.icons' # busca archivos
-alias fdh 'fd --hidden -E .git -E ~/.cache -E ~/.local/share/icons -E .~/.local/share/Trash -E ~/.icons' # busca archivos ocultos
+alias fd 'fd --glob -E .git -E ~/.cache -E ~/.local/share/icons -E ~/.local/share/Trash -E ~/.icons' # busca archivos
+alias fdh 'fd --glob --hidden -E .git -E ~/.cache -E ~/.local/share/icons -E .~/.local/share/Trash -E ~/.icons' # busca archivos ocultos
 alias fzf 'fzf --reverse --color=base16 --preview "bat {}"'
 alias l 'eza --color-scale --header --icons --git --no-time --group-directories-first'
 alias l1 'eza --color-scale --header --icons --git --no-time --group-directories-first -1'
 alias la 'eza --color-scale --header --icons --git --no-time --group-directories-first --all'
 alias ll 'eza --color-scale --header --icons --git --no-time --group-directories-first -l'
 alias lla 'eza --color-scale --header --icons --git --no-time --group-directories-first -la'
-alias ls 'eza -color-scale --header --icons --git --no-time --group-directories-first'
+alias ls 'eza --color-scale --header --icons --git --no-time --group-directories-first'
 alias lt 'eza --color-scale --header --icons --git --no-time --group-directories-first -L1 -T'
 alias ld "eza --color-scale --header --icons --git --no-time --group-directories-first -D"
 alias lld "eza --color-scale --header --icons --git --no-time --group-directories-first -lD"
@@ -30,7 +30,7 @@ alias llt "eza -l --tree --level=3"
 alias llta "eza -la --tree --level=3"
 alias icat 'kitten icat'
 alias nv nvim
-alias NTFS 'cd /mnt/BACKUP/HOME'
+alias NTFS 'cd /run/media/jhonny/BACKUPS/HOME'
 alias PYTHON 'cd ~/Proyectos/python/ && clear'
 alias rgh 'rg --hidden --line-number --color always'
 alias topcpu 'ps -eo pid,cmd,%mem,%cpu --sort -%cpu | head'
