@@ -17,7 +17,7 @@ bind --user alt-shift-t transpose-words
 
 set HISTCONTROL = ignoreboth
 
-eval "$(zoxide init fish)"
+
 starship init fish | source
 fzf --fish | source
 set -gx fish_glob_case_sensitive 1
@@ -31,3 +31,4 @@ function y
     rm -f -- "$tmp"
 end
 bind \t __fzf_complete
+eval "$(zoxide init fish --cmd cd)"
