@@ -25,7 +25,6 @@ alias ltm "eza --color-scale --header --icons --git --no-time --group-directorie
 alias lcr "eza --color-scale --header --icons --git --no-time --group-directories-first -l --sort=created"
 alias lgit "eza --color-scale --header --icons --git --no-time --group-directories-first -l --git"
 alias lx "eza -lbhHigUmuS --git"
-alias lt "eza --tree --level=3"
 alias lta "eza -a --tree --level=3"
 alias llt "eza -l --tree --level=3"
 alias llta "eza -la --tree --level=3"

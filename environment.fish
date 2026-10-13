@@ -1,13 +1,13 @@
 ### environment.fish file (or profile.fish if you prefer bash naming)
 # Ensure your critical universals exist
-set -qU XDG_CONFIG_HOME; or set -Ux XDG_CONFIG_HOME $HOME/.config
-set -qU XDG_DATA_HOME; or set -Ux XDG_DATA_HOME $HOME/.local/share
-set -qU XDG_CACHE_HOME; or set -Ux XDG_CACHE_HOME $HOME/.cache
+set -gx XDG_CONFIG_HOME $HOME/.config
+set -gx XDG_DATA_HOME $HOME/.local/share
+set -gx XDG_CACHE_HOME $HOME/.cache
 
 # Favor globals for most things
 #set -g fish_glob_case_sensitive 0
-set -gx EDITOR /usr/bin/vim
-set -gx VISUAL /usr/bin/vim
+set -gx EDITOR /usr/bin/nvim
+set -gx VISUAL /usr/bin/nvim
 set -gx SUDO_EDITOR /usr/bin/micro
 set sponge_allow_previously_successful false
 set -x LESS_TERMCAP_mb \e'[01;32m'
