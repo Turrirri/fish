@@ -5,5 +5,6 @@ function updates
     fisher update
     fish_update_completions
     tldr --update
+    flatpak update
     pamac upgrade --force-refresh --no-confirm
 end
