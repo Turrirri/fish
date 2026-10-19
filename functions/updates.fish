@@ -7,4 +7,5 @@ function updates
     tldr --update
     flatpak update
     pamac upgrade --force-refresh --no-confirm
+    pamac clean -b
 end
