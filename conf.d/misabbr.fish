@@ -20,6 +20,7 @@ abbr -a -- flsearch 'flatpak search'
 abbr -a -- free 'free -mh'
 abbr -a -- info tldr
 abbr -a -- instala 'pamac install'
+abbr -a -- ka kate
 abbr -a -- locate 'plocate -i --regex'
 abbr -a -- mc 'mc -b'
 abbr -a -- mirrors 'sudo pacman-mirrors -c United_States'
@@ -38,6 +39,7 @@ abbr -a -- q exit
 abbr -a -- quita 'pamac remove --orphans'
 abbr -a -- rm trash-put
 abbr -a -- rmdir 'rm -fR'
+abbr -a -- savenew 'sudo fd -tf ".*\.pac(save|new)" / -E /home/ -E /mnt/ -E /run/ 2>/dev/null'
 abbr -a -- sedit sudoedit
 abbr -a -- traduce trans
 abbr -a -- uninstall 'pamac remove --orphans'

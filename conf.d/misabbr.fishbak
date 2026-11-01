@@ -13,9 +13,14 @@ abbr -a -- edit '$EDITOR'
 abbr -a -- editakitty '$EDITOR .config/kitty/kitty.conf'
 abbr -a -- egrep 'egrep -i --colour=auto'
 abbr -a -- fgrep 'fgrep -i --colour=auto'
+abbr -a -- flin 'flatpak install --user'
+abbr -a -- flun 'flatpak uninstall'
+abbr -a -- fllist 'flatpak list'
+abbr -a -- flsearch 'flatpak search'
 abbr -a -- free 'free -mh'
 abbr -a -- info tldr
 abbr -a -- instala 'pamac install'
+abbr -a -- ka kate
 abbr -a -- locate 'plocate -i --regex'
 abbr -a -- mc 'mc -b'
 abbr -a -- mirrors 'sudo pacman-mirrors -c United_States'
@@ -33,8 +38,8 @@ abbr -a -- pygrep 'fd --regex -H -i -tf ".*\.py"'
 abbr -a -- q exit
 abbr -a -- quita 'pamac remove --orphans'
 abbr -a -- rm trash-put
-abbr -a -- rm 'rm -i'
 abbr -a -- rmdir 'rm -fR'
+abbr -a -- savenew 'sudo fd -tf ".*\.pac(save|new)" / -E /home/ -E /mnt/ -E /run/ 2>/dev/null'
 abbr -a -- sedit sudoedit
 abbr -a -- traduce trans
 abbr -a -- uninstall 'pamac remove --orphans'

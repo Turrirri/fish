@@ -17,7 +17,6 @@ bind --user alt-shift-t transpose-words
 
 set HISTCONTROL = ignoreboth
 
-
 starship init fish | source
 fzf --fish | source
 set -gx fish_glob_case_sensitive 1

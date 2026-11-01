@@ -6,17 +6,17 @@ set -gx XDG_CACHE_HOME $HOME/.cache
 
 # Favor globals for most things
 #set -g fish_glob_case_sensitive 0
-set -gx EDITOR /usr/bin/nvim
-set -gx VISUAL /usr/bin/nvim
+set -gx EDITOR /usr/bin/kate
+set -gx VISUAL /usr/bin/kate
 set -gx SUDO_EDITOR /usr/bin/micro
 set sponge_allow_previously_successful false
-set -x LESS_TERMCAP_mb \e'[01;32m'
-set -x LESS_TERMCAP_md \e'[01;32m'
-set -x LESS_TERMCAP_me \e'[0m'
-set -x LESS_TERMCAP_se \e'[0m'
-set -x LESS_TERMCAP_so \e'[01;47;34m'
-set -x LESS_TERMCAP_ue \e'[0m'
-set -x LESS_TERMCAP_us \e'[01;36m'
+#set -x LESS_TERMCAP_mb \e'[01;32m'
+#set -x LESS_TERMCAP_md \e'[01;32m'
+#set -x LESS_TERMCAP_me \e'[0m'
+#set -x LESS_TERMCAP_se \e'[0m'
+#set -x LESS_TERMCAP_so \e'[01;47;34m'
+#set -x LESS_TERMCAP_ue \e'[0m'
+#set -x LESS_TERMCAP_us \e'[01;36m'
 set -x LESS -R
 set -x EZA_CONFIG_DIR "$HOME/.config/eza"
 set -x GROFF_NO_SGR 1
