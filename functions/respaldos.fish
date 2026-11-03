@@ -14,7 +14,8 @@ function respaldos
             --exclude='.dotnet/' \
             --exclude='.npm/' \
             --exclude='.nuget/' \
-            --exclude='.mozilla/' \
+            --exclude='.config/mozilla/' \
+            --exclude='.mozilla-backup/' \
             --exclude='.vim/plugged/' \
             --exclude='.local/' \
             $HOME/ $DIRECTORIO/ 2>~/errores.log
