@@ -5,7 +5,7 @@ alias bat 'bat --theme "OneHalfDark"'
 alias configs 'vim  ~/.vimrc ~/.config/fish/conf.d/aliasses.fish ~/.config/fish/conf.d/misabbr.fish'
 alias dtree "tree -L 3 -a -d -I '.git'"
 #alias fd 'fd --glob -E .git -E ~/.cache -E ~/.local/share/icons -E ~/.local/share/Trash -E ~/.icons' # busca archivos
-#alias fdh 'fd --glob --hidden -E .git -E ~/.cache -E ~/.local/share/icons -E .~/.local/share/Trash -E ~/.icons' # busca archivos ocultos
+alias fdh 'fd --glob --hidden -E .git -E ~/.cache -E ~/.local/share/icons -E .~/.local/share/Trash -E ~/.icons' # busca archivos ocultos
 alias fzf 'fzf --reverse --preview "bat --color=always {}"'
 alias listpath "echo $PATH | tr ':' '\n'"
 alias l 'eza --color-scale --header --icons --git --no-time --group-directories-first'

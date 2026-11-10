@@ -8,6 +8,7 @@ if status is-interactive
     set -g fish_greeting
 end
 
+
 #source $HOME/.cargo/env.fish
 #set -gx ZED_ALLOW_EMULATED_GPU 1
 
