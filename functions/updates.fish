@@ -6,6 +6,5 @@ function updates
     fish_update_completions
     tldr --update
     flatpak update
-    pamac upgrade --force-refresh --no-confirm
-    pamac clean -b
+    yay -Syu --noconfirm -y
 end

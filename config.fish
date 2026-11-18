@@ -6,29 +6,29 @@ source $__fish_config_dir/environment.fish
 if status is-interactive
     # Commands to run in interactive sessions can go here
     set -g fish_greeting
-end
 
+    #source $HOME/.cargo/env.fish
+    #set -gx ZED_ALLOW_EMULATED_GPU 1
 
-#source $HOME/.cargo/env.fish
-#set -gx ZED_ALLOW_EMULATED_GPU 1
+    bind --user alt-shift-t transpose-words
 
-bind --user alt-shift-t transpose-words
+    #set PATH $HOME/.local/bin $PATH
 
-#set PATH $HOME/.local/bin $PATH
+    set HISTCONTROL = ignoreboth
 
-set HISTCONTROL = ignoreboth
-
-starship init fish | source
-fzf --fish | source
-set -gx fish_glob_case_sensitive 1
-#  para yazi
-function y
-    set tmp (mktemp -t "yazi-cwd.XXXXXX")
-    command yazi $argv --cwd-file="$tmp"
-    if read -z cwd <"$tmp"; and [ "$cwd" != "$PWD" ]; and test -d "$cwd"
-        builtin cd -- "$cwd"
+    starship init fish | source
+    fzf --fish | source
+    set -gx fish_glob_case_sensitive 1
+    #  para yazi
+    function y
+        set tmp (mktemp -t "yazi-cwd.XXXXXX")
+        command yazi $argv --cwd-file="$tmp"
+        if read -z cwd <"$tmp"; and [ "$cwd" != "$PWD" ]; and test -d "$cwd"
+            builtin cd -- "$cwd"
+        end
+        rm -f -- "$tmp"
     end
-    rm -f -- "$tmp"
+    bind \t __fzf_complete
+    eval "$(zoxide init fish --cmd cd)"
+
 end
-bind \t __fzf_complete
-eval "$(zoxide init fish --cmd cd)"

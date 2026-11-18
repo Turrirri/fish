@@ -8,26 +8,6 @@ alias dtree "tree -L 3 -a -d -I '.git'"
 alias fdh 'fd --glob --hidden -E .git -E ~/.cache -E ~/.local/share/icons -E .~/.local/share/Trash -E ~/.icons' # busca archivos ocultos
 alias fzf 'fzf --reverse --preview "bat --color=always {}"'
 alias listpath "echo $PATH | tr ':' '\n'"
-alias l 'eza --color-scale --header --icons --git --no-time --group-directories-first'
-alias l1 'eza --color-scale --header --icons --git --no-time --group-directories-first -1'
-alias la 'eza --color-scale --header --icons --git --no-time --group-directories-first --all'
-alias ll 'eza --color-scale --header --icons --git --no-time --group-directories-first -l'
-alias lla 'eza --color-scale --header --icons --git --no-time --group-directories-first -la'
-alias ls 'eza --color-scale --header --icons --git --no-time --group-directories-first'
-alias lt 'eza --color-scale --header --icons --git --no-time --group-directories-first -L1 -T'
-alias ld "eza --color-scale --header --icons --git --no-time --group-directories-first -D"
-alias lld "eza --color-scale --header --icons --git --no-time --group-directories-first -lD"
-alias lf "eza --color-scale --header --icons --git --no-time --group-directories-first -f"
-alias llf "eza --color-scale --header --icons --git --no-time --group-directories-first -lf"
-alias lsz "eza --color-scale --header --icons --git --no-time --group-directories-first -l --sort=size"
-alias lsx "eza --color-scale --header --icons --git --no-time --group-directories-first -l --sort=extension"
-alias ltm "eza --color-scale --header --icons --git --no-time --group-directories-first -l --sort=modified"
-alias lcr "eza --color-scale --header --icons --git --no-time --group-directories-first -l --sort=created"
-alias lgit "eza --color-scale --header --icons --git --no-time --group-directories-first -l --git"
-alias lx "eza -lbhHigUmuS --git"
-alias lta "eza -a --tree --level=3"
-alias llt "eza -l --tree --level=3"
-alias llta "eza -la --tree --level=3"
 alias icat 'kitten icat'
 alias nv nvim
 alias NTFS 'cd /run/media/jhonny/BACKUPS/HOME'
@@ -42,4 +22,5 @@ alias vimconfig 'ed -O ~/.vimrc ~/.gvimrc'
 alias wc fastwc
 alias yayp "yay -Qq | fzf --preview 'yay -Qil {}' --layout reverse --bind 'enter:execute(yay -Qil {} | bat)'"
 alias yays "yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro yay -S"
+alias z cd
 alias zombie "ps aux | rg -s 'Z'"
