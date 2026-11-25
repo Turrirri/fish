@@ -2,8 +2,8 @@ alias .... 'cd ../../..'
 alias ... 'cd ../..'
 alias .. 'cd ..'
 alias bat 'bat --theme "OneHalfDark"'
-alias configs 'vim  ~/.vimrc ~/.config/fish/conf.d/aliasses.fish ~/.config/fish/conf.d/misabbr.fish'
 alias dtree "tree -L 3 -a -d -I '.git'"
+alias eza 'eza --color-scale --header --icons --git --group-directories-first'
 #alias fd 'fd --glob -E .git -E ~/.cache -E ~/.local/share/icons -E ~/.local/share/Trash -E ~/.icons' # busca archivos
 alias fdh 'fd --glob --hidden -E .git -E ~/.cache -E ~/.local/share/icons -E .~/.local/share/Trash -E ~/.icons' # busca archivos ocultos
 alias fzf 'fzf --reverse --preview "bat --color=always {}"'
@@ -22,5 +22,5 @@ alias vimconfig 'ed -O ~/.vimrc ~/.gvimrc'
 alias wc fastwc
 alias yayp "yay -Qq | fzf --preview 'yay -Qil {}' --layout reverse --bind 'enter:execute(yay -Qil {} | bat)'"
 alias yays "yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro yay -S"
-alias z cd
+#alias z cd
 alias zombie "ps aux | rg -s 'Z'"
